@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/Home.scss';
 import { withRouter, Link, Route, Redirect } from 'react-router-dom';
 import Stories from './Stories';
+import ReadNow from './ReadNow';
 
 class Home extends Component {
 
@@ -21,11 +22,7 @@ class Home extends Component {
           <div className="BlurbContainer">
             <h1> Stay hungry. Stay foolish. </h1>
             <h3> Learn from the hottest startups in the world. </h3>
-            <div className="ReadNowButtonContainer"> 
-              <Link to='/stories' className="ReadNowLink">
-                <h3 className="ReadNowText"> Read Now </h3> 
-              </Link>
-            </div>
+            <ReadNow />
           </div>
 
           <div className="BannerContainer">
@@ -72,11 +69,7 @@ class Home extends Component {
 
           <div className="FooterContainer">
             <h1> Let's get started. </h1>
-            <div className="ReadNowButtonContainer">
-              <Link to='/stories' className="ReadNowLink">
-                <h3 className="ReadNowText"> Read Now </h3>
-              </Link>
-            </div>
+            <ReadNow />
           </div>
         </div>
       )
@@ -88,11 +81,7 @@ class Home extends Component {
           <div className="BlurbContainer">
             <h1> Stay hungry. Stay foolish. </h1>
             <h3> Learn from the hottest startups in the world. </h3>
-            <div className="ReadNowButtonContainer"> 
-              <Link to='/stories' className="ReadNowLink">
-                <h3 className="ReadNowText"> Read Now </h3> 
-              </Link> 
-            </div>
+            <ReadNow />
           </div>
 
           <div className="BannerContainer">
@@ -139,11 +128,7 @@ class Home extends Component {
 
           <div className="FooterContainer">
             <h1> Let's get started. </h1>
-            <div className="ReadNowButtonContainer">
-              <Link to='/stories' className="ReadNowLink">
-                <h3 className="ReadNowText"> Read Now </h3> 
-              </Link>
-            </div>
+            <ReadNow />
           </div>
         </div>
       )
