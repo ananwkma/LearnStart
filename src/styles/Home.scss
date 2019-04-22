@@ -1,0 +1,176 @@
+@import './shared.scss';
+
+.HomeContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	position: absolute;
+	background-color: white;
+	align-items: center;
+	margin-top: $header-offset;
+}
+
+.BlurbContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $off-black;
+	width: 100vw;
+	color: white;
+	padding-top: 30vh;
+	padding-left: 50px;
+	padding-bottom: 30vh;
+}
+
+.BannerContainer {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: $medium-grey;
+	width: 100vw;
+	color: black;
+	padding: 40px 0 40px 0;
+}
+
+.BannerContainer > h1 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.BannerContainer > h3 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.PageContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	color: black;
+	background-color: white;
+	padding-top: 100px;
+	align-items: center;
+}
+
+.ContentContainer {
+	width: 100vw;
+	height: 100vw;
+	background-color: $dark-grey;
+}
+
+.IntroTextContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	text-align: center;
+	background-color: white;
+	align-content: center;
+}
+
+.ReadNowButtonContainer {
+	background: $teal;
+	width: 250px;
+	text-align: center;
+	padding: 1px 0;
+	margin-top: 70px;
+	cursor: pointer;
+}
+
+.ReadNowButtonContainer > h3 {
+	color: white;
+	font-weight: 400;
+}
+
+.FooterContainer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 70px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background-color: $medium-grey;
+	width: 100vw;
+	color: black;
+	padding: 40px 0 40px 0;
+}
+
+.Footer > h1 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h1 {
+	font-size: $mobile-h1-fontsize;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: $mobile-h2-fontsize;
+}
+
+h3 {
+	font-size: $mobile-h3-fontsize;
+	font-weight: 200;
+}
+
+.ReadNowLink {
+	text-decoration: none;
+}
+
+.ReadNowText {
+	text-decoration: none;
+	color: white;
+	font-size: $mobile-h3-fontsize;
+	font-weight: 400;
+}
+
+@media (min-width: $mobile-size) and (orientation:landscape) {
+	h1 {
+		font-size: $desktop-h1-fontsize;
+	}
+
+	h2 {
+		font-size: $desktop-h2-fontsize;
+	}
+
+	h3 {
+		font-size: $desktop-h3-fontsize;
+	}
+
+	.BannerContainer > h1 {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.BannerContainer > h3 {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.PageContainer {
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		color: black;
+		background-color: white;
+		padding-top: 100px;
+		align-items: center;
+	}
+	.IntroTextContainer {
+		display: inline-block;
+		width: 50vw;
+		background-color: white;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.ContentContainer {
+		width: 50vw;
+		height: 50vw;
+		background-color: $dark-grey;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}

@@ -1,0 +1,43 @@
+@import './shared.scss';
+
+.HeaderContainer {
+	display: flex;
+	flex-direction: row;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+	background-color: $light-grey;
+	padding: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.SignUp > h3 {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: $desktop-h1-fontsize;
+}
+
+h2 {
+	font-size: $desktop-h2-fontsize;
+}
+
+h3 {
+	font-size: $desktop-h3-fontsize;
+}
+
+.LearnStart {
+	color: $off-black;
+	float: left;
+}
+
+.SignUp {
+	margin-right: 50px;
+	color: $teal;
+	float: right;
+	cursor: pointer;
+}
